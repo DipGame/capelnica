@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('BebasNeuePro-ExpandedBook.eot');
+    src: local('Bebas Neue Pro Expanded Book'), local('BebasNeuePro-ExpandedBook'),
+        url('BebasNeuePro-ExpandedBook.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeuePro-ExpandedBook.woff2') format('woff2'),
+        url('BebasNeuePro-ExpandedBook.woff') format('woff'),
+        url('BebasNeuePro-ExpandedBook.ttf') format('truetype');
+    font-weight: 325;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('BebasNeuePro-ExpandedBold.eot');
+    src: local('Bebas Neue Pro Expanded Bold'), local('BebasNeuePro-ExpandedBold'),
+        url('BebasNeuePro-ExpandedBold.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeuePro-ExpandedBold.woff2') format('woff2'),
+        url('BebasNeuePro-ExpandedBold.woff') format('woff'),
+        url('BebasNeuePro-ExpandedBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,233 +1,97 @@
-.footer {
-
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0 20px;
 
-    .cont {
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 0 20px;
-    }
-
-    .container {
+    .footer {
+        margin: 0 auto;
+        padding: 50px 0;
         width: 100%;
         max-width: 1290px;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        gap: 30px;
 
-        .top {
-            padding: 40px 0 30px;
+        .cont_1 {
             display: flex;
             justify-content: space-between;
-            gap: 20px;
-            .link__container {
-                max-width: 155px;
+            gap: 30px;
+
+            span {
+                font-family: Golos;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                text-align: left;
+                color: #868C98;
             }
+
+            a {
+                font-family: Golos;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                text-align: right;
+                color: #111827;
+            }
+
+            a:hover {
+                color: #10B981;
+            }
+
         }
 
-        .middle {
-            display: flex;
-            // flex-wrap: wrap;
-            padding: 30px 0;
-            gap: 40px 20px;
-            justify-content: space-between;
+        .cont_2 {
+            font-family: Bebas Neue Pro;
+            font-size: 36px;
+            font-weight: 325;
+            line-height: 44.4px;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
-            .footer__menu_1,
-            .footer__menu_2 {
-                h3 {
-                    color: #FFF;
-                    font-family: Geologica;
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: 24px;
+
+    }
+
+
+}
+
+@media (max-width: 1150px) {
+    footer {
+
+        .footer {
+
+            .cont_1 {
+                flex-direction: column;
+                gap: 30px;
+
+                span {
+                    font-family: Golos;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.8px;
                     text-align: left;
                 }
 
                 a {
-                    color: #A1ABB1;
-                    font-family: Geologica;
+                    text-align: left;
+                    font-family: Golos;
                     font-size: 14px;
                     font-weight: 400;
-                    line-height: 21px;
-                    text-align: left;
+                    line-height: 16.8px;
                 }
 
                 a:hover {
-                    opacity: .8;
+                    color: #10B981;
                 }
+
             }
 
-            .footer__menu_1 {
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    width: 100%;
-                    max-width: 190px;
-                }
-
-                .adress__container {
-                    width: 100%;
-                    max-width: 260px;
-                    flex-direction: column;
-                    gap: 20px;
-
-                    .box-cont {
-                        div {
-                            span {
-                                font-family: Geologica;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 21px;
-                                text-align: left;
-                                color: #A1ABB1;
-                                // margin-bottom: 10px;
-                            }
-
-                            p {
-                                font-family: Geologica;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 21px;
-                                text-align: left;
-                                display: flex;
-                                flex-direction: column;
-                                gap: 10px;
-                            }
-
-                            span,
-                            p {
-                                max-width: 224px;
-                            }
-                        }
-
-                        div::before {
-                            width: 16px;
-                            height: 16px;
-                        }
-                    }
-
-
-                }
-
-                .link__container {
-                    justify-content: start;
-
-                    .box-cont {
-                        cursor: pointer;
-
-                        .mail {
-                            margin: 0;
-
-                            span {
-                                font-family: Geologica;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 21px;
-                                text-align: left;
-                                color: #A1ABB1;
-                            }
-
-                            p {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 10px;
-                            }
-                        }
-
-                        .mail::before {
-                            margin-top: auto;
-                            margin-bottom: 2px;
-                        }
-                    }
-                }
-            }
-
-            .footer__menu_2 {
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
-
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 15px 40px;
-                    width: 100%;
-                    max-width: 420px;
-
-                    li {
-                        width: 100%;
-                        max-width: 190px;
-                    }
-                }
-            }
-        }
-
-        .bottom {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 40px 0;
-
-            span,
-            a {
-                color: #FFF;
-                font-family: Geologica;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 21px;
+            .cont_2 {
+                font-family: Bebas Neue Pro;
+                font-size: 24px;
+                font-weight: 325;
+                line-height: 28.8px;
                 text-align: left;
-            }
-        }
-
-
-    }
-
-    @media (max-width: 1140px) {
-        .container {
-            .middle {
-                flex-wrap: wrap;
-                justify-content: start;
-            }
-        }
-    }
-
-    @media (max-width: 793px) {
-        .container {
-            .middle {
-                flex-wrap: wrap;
-                justify-content: start;
-                gap: 40px;
-            }
-        }
-    }
-
-    @media (max-width: 470px) {
-        .container {
-            .middle {
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 40px 20px;
-                
-                .footer__menu_2 {
-
-                    ul {
-                        li {
-                            max-width: 145px;
-                        }
-                    }
-                }
-            }
-
-            .bottom {
-                flex-direction: column;
-                row-gap: 40px;
             }
         }
     }
