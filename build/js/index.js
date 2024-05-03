@@ -232,9 +232,36 @@ document.addEventListener("DOMContentLoaded", function () {
         const cardsAns = contAns.querySelectorAll(".card");
 
         cardsAns.forEach(card => {
-            card.addEventListener('click', () => { 
+            card.addEventListener('click', () => {
                 card.classList.toggle("open");
-             })
+            })
+        });
+    }
+
+    if (document.getElementById("tab_cont_1")) {
+        const contTab_1 = document.getElementById("tab_cont_1");
+        const tab_1 = contTab_1.querySelectorAll("a");
+        const cocteli = document.querySelector(".cocteli");
+        const cont_3 = cocteli.querySelector(".cont_3");
+        const cards_1 = cont_3.querySelectorAll(".card");
+
+        tab_1.forEach(tab => {
+
+            tab.addEventListener('click', () => {
+                tab_1.forEach(tabb => {
+                    tabb.classList.remove("active");
+                })
+                tab.classList.add("active");
+                cards_1.forEach(card => {
+                    card.classList.add("invise");
+                    if (tab.id == card.id) {
+                        card.classList.remove("invise");
+                    } else if (tab.id == 'cl_0') {
+                        card.classList.remove("invise");
+
+                    }
+                });
+            })
         });
     }
 });
