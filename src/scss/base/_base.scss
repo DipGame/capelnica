@@ -62,6 +62,8 @@ h2 {
 	color: #111827;
 }
 
+
+
 .stil_1 {
 	h1 {
 		font-family: Golos;
@@ -120,11 +122,21 @@ h6 {
 
 h3 {
 	font-family: Golos;
-	font-size: 54px;
-	font-weight: 500;
-	line-height: 70px;
-	letter-spacing: 0em;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 55px;
 	text-align: left;
+}
+
+@media (max-width: 600px) {
+	h3 {
+		font-family: Golos;
+		font-size: 40px;
+		font-weight: 400;
+		line-height: 44px;
+		text-align: left;
+		word-wrap: break-word;
+	}
 }
 
 a {
@@ -235,101 +247,90 @@ a.button {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
-	background-color: #B1163D;
+	background-color: #10B981;
 	width: 100%;
-	max-width: 300px;
-	height: 50px;
+	max-width: 360px;
+	height: 60px;
 	align-items: center;
 	color: #111827;
 	transition: all .5s;
 	cursor: pointer;
 	font-family: Golos;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 21px;
-	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19.2px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #FFF;
+	border-radius: 15px;
+	border: 1px solid #10B981;
 }
 
 a.button:hover {
-	background-color: #CD355B;
+	background-color: #FFF;
+	color: #111827;
 	transition: all .5s;
+	border: 1px solid #10B981;
 }
 
-a.button::after {
-	content: '';
-	background-image: url('./../img/arrow-right.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 25px;
-	height: 25px;
-}
-
-a.button_2::after {
-	content: '';
-	background-image: url('./../img/arrow-right_2.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 12px;
-	height: 12px;
+@media (max-width: 900px) {
+	a.button {
+		max-width: 300px;
+		height: 50px;
+		font-family: Golos;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 14.4px;
+		text-align: left;
+	}
 }
 
 a.button_2 {
 	display: flex;
 	justify-content: center;
-	gap: 15px;
-	background-color: #B1163D;
+	gap: 10px;
+	background-color: #FFF;
 	width: 100%;
-	max-width: 170px;
-	height: 50px;
+	max-width: 300px;
+	height: 60px;
 	align-items: center;
 	color: #111827;
 	transition: all .5s;
 	cursor: pointer;
 	font-family: Golos;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 600;
-	line-height: 18px;
-	text-align: center;
+	line-height: 19.2px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #10B981;
+	border-radius: 15px;
+	border: 1px solid #10B981;
 }
 
-@media (max-width: 1052px) {
-	a.button_2 {
-		max-width: 140px;
-		height: 35px;
-	}
-
-	a.button_2::after {
-		content: '';
-		background-image: url('./../img/arrow-right_2.svg');
-		background-size: contain;
-		background-repeat: no-repeat;
-		width: 9px;
-		height: 9px;
-	}
+a.button_2:hover {
+	background-color: #10B981;
+	color: #FFF;
+	border: 1px solid #10B981;
 }
 
 a.button_3 {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-	width: 100%;
+	padding: 0;
 	max-width: 300px;
-	height: 50px;
-	align-items: center;
-	color: #1E2D44;
-	transition: all .5s;
-	cursor: pointer;
-	font-family: Golos;
-	font-size: 14px;
-	font-weight: 600;
-	line-height: 21px;
-	text-align: center;
-	border: 1px solid #1E2D44;
+	border: none;
+	background: none;
+	color: #111827;
+	border-bottom: 1px dotted #111827;
+	height: auto;
+	width: auto;
+	border-radius: 0;
 }
 
 a.button_3:hover {
-	background-color: #1E2D44;
-	color: #111827;
+	background: none;
+	border: none;
+	border-bottom: 1px dotted #10B981;
+	color: #10B981;
 }
 
 @media (max-width: 500px) {
@@ -342,3 +343,6 @@ a.button_3:hover {
 	overflow: hidden;
 }
 
+.invise {
+	display: none !important;
+}

@@ -94,6 +94,14 @@
 				font-weight: 400;
 				line-height: 19.2px;
 				text-align: left;
+				transition: .5s;
+			}
+		}
+
+		a.box-cont:hover {
+			p {
+				color: #10B981;
+				transition: .5s;
 			}
 		}
 
@@ -363,6 +371,7 @@
 				width: 120px;
 				display: flex;
 				justify-content: space-between;
+				margin-bottom: 20px;
 			}
 
 			.lizenz {

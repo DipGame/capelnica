@@ -1,1 +1,1 @@
-# capelnica
+Ссылка на демо https://dipgame.github.io/capelnica/

@@ -1,0 +1,147 @@
+.baner {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    .cont_1 {
+        max-width: 960px;
+        width: 100%;
+        padding: 40px 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #DCFCE7;
+        border-radius: 30px;
+        overflow: hidden;
+        background-image: var(--baner_1);
+        background-position: 100% 0;
+        background-size: contain;
+
+        .cont {
+            width: 100%;
+            max-width: 535px;
+
+            span {
+                font-family: Golos;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21.6px;
+                text-align: left;
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-family: Golos;
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 55px;
+                text-align: left;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-family: Golos;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+            }
+
+            .button {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .cont_2 {
+        .img {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            width: 300px;
+
+            img {
+                object-fit: cover;
+            }
+
+            .text__cap {
+                position: absolute;
+                top: 40%;
+                width: 150px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                h3 {
+                    color: #FFF;
+                    font-family: Golos;
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 33.8px;
+                    text-align: left;
+                    margin-bottom: 7px;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    li {
+                        color: #FFF;
+                        font-family: Golos;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 18.2px;
+                        text-align: left;
+                        list-style: disc;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 970px) {
+        flex-direction: column;
+        align-items: center;
+
+        .cont_1 {
+            padding: 40px 30px;
+            background-image: var(--baner_1_mob);
+
+            .cont {
+
+                span {
+                    font-family: Golos;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    text-align: left;
+                }
+
+                h2 {
+                    font-family: Golos;
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 44px;
+                    text-align: left;
+                    word-wrap: break-word;
+                }
+
+                p {
+                    font-family: Golos;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

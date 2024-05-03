@@ -8,6 +8,8 @@
 	<title>Стартовый шаблон</title>
 	<link rel="stylesheet" href="./fonts/Golos.css" />
 	<link rel="stylesheet" href="./fonts/Bebas Neue Pro.css" />
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -18,13 +20,22 @@
 <body>
 	@@include('blocks/header.html')
 	<main>
-		<h1>
-			fdjkshfksf
-		</h1>
+		@@include('blocks/_baner.html')
+		@@include('blocks/_preim.html')
+		@@include('blocks/_infus.html')
+		@@include('blocks/_why.html')
+		@@include('blocks/_problem.html')
+		@@include('blocks/_cocteli.html') 
+		@@include('blocks/_how.html')
+		@@include('blocks/_dop.html') 
+		@@include('blocks/_fotos.html')
+		@@include('blocks/_form_desc_2.html')
+		@@include('blocks/_map.html')
 	</main>
 	@@include('blocks/footer.html')
 	<script src="./js/jquery-3.7.1.min.js"></script>
-<!-- 	<script src="./js/swiper-bundle.js"></script> -->
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
 	<script src="./js/index.js"></script>
 </body>
 

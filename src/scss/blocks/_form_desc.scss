@@ -1,0 +1,220 @@
+.form_desc {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto 100px;
+    background: linear-gradient(41.17deg, #DFFFCD 1.75%, #90F9C4 62.14%, #39F3BB 95.86%);
+    border-radius: 30px;
+    padding: 75px 110px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    .cont_1 {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+
+        p {
+            font-family: Golos;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 55px;
+            text-align: left;
+        }
+
+        span {
+            font-family: Golos;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25.2px;
+            text-align: left;
+            margin-top: auto;
+            max-width: 450px;
+        }
+    }
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 520px;
+
+        .container {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            
+
+            .input__container {
+                width: 100%;
+                max-width: 50%;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    background-color: #FFF;
+                    border-radius: 15px;
+                    height: 60px;
+                    padding: 0 20px;
+                    font-family: Golos;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20.8px;
+                    text-align: left;
+                    color: #111827;
+                }
+
+                input::placeholder {
+                    font-family: Golos;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20.8px;
+                    text-align: left;
+                    color: #111827;
+                }
+
+
+                span {
+                    color: rgb(243, 107, 107);
+                    position: absolute;
+                    bottom: -20px;
+                    left: 20px;
+                    display: none;
+                }
+            }
+
+            .input__container.err {
+                input {
+                    background-color: rgb(243, 107, 107);
+                    color: #FFF;
+                }
+
+                input::placeholder {
+                    color: #FFF;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        button {
+            padding: 0;
+            width: 100%;
+            background-color: #111827;
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            height: 60px;
+            font-family: Golos;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+            text-align: left;
+            text-transform: uppercase;
+            transition: .5s;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #FFF;
+            color: #111827;
+        }
+
+        .pref {
+            font-family: Golos;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.6px;
+            text-align: left;
+
+            a {
+                font-family: Golos;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19.6px;
+                text-align: left;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .form_desc {
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .form_desc .cont_1 {
+        gap: 30px;
+
+        span {
+            font-family: Golos;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+
+        }
+    }
+
+    .form_desc .cont_1 p {
+        font-family: Golos;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: left;
+
+    }
+
+    .form_desc .form1 {
+        max-width: none;
+    }
+}
+
+@media (max-width: 785px) {
+    .form_desc {
+        padding: 50px 30px;
+    }
+
+    .form_desc .form1 .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form_desc .form1 .container .input__container {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.form_desc.good {
+    .cont_1 {
+        p {
+            font-family: Golos;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 55px;
+            text-align: left;
+        }
+
+        span {
+           display: none;
+        }
+    }
+
+    .form1 {
+        display: none;
+    }
+}

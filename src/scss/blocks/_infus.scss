@@ -1,0 +1,114 @@
+.infus {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    .cont_1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 270px;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .cont_2 {
+        width: 100%;
+        max-width: 50%;
+        background-color: #F8FAFF;
+        border-radius: 30px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+        h3 {
+            font-family: Golos;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            text-align: left;
+        }
+
+        p {
+            font-family: Golos;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        .cont_2_1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+
+            span {
+                font-family: Golos;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #FFF;
+                background-color: #10B981;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                padding: 5px 20px;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+
+        .cont_1 {
+            width: 100%;
+            max-width: none;
+        }
+
+        .cont_2 {
+            width: 100%;
+            max-width: none;
+            padding: 40px 30px;
+
+            h3 {
+                font-family: Golos;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 48px;
+                text-align: left;
+                word-wrap: break-word;
+            }
+
+            p {
+                font-family: Golos;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                text-align: left;
+
+            }
+
+            .cont_2_1 {
+
+                span {
+                    font-family: Golos;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
