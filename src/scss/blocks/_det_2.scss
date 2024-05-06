@@ -1,0 +1,9 @@
+.det_2 {
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #F8FAFF;
+
+    @media (max-width: 550px) {
+        padding: 30px;
+    }
+}

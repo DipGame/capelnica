@@ -64,6 +64,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    let capelSwiper1 = new Swiper(".capelSwiper1", {
+        autoplay: {
+            delay: 0,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+            reverseDirection: false,
+        },
+        freeMode: true,
+        speed: 20000,
+        freeModeMomentum: false,
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            695: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1045: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1357: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        }
+    });
+
     // Скрипт три линии
     $(function () {
         $('#nav-icon4').click(function () {

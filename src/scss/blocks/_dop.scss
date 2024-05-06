@@ -26,6 +26,7 @@
                 max-height: 3000px;
                 opacity: 1;
                 transition: .5s;
+                margin-bottom: 30px;
             }
         }
 
@@ -66,6 +67,8 @@
                 max-height: 0;
                 opacity: 0;
                 transition: .5s;
+                margin: 0;
+
 
                 ul {
                     list-style: none;

@@ -1,0 +1,60 @@
+.drugie {
+    width: 100%;
+    background-color: #F8FAFF;
+    padding: 100px 20px 55px;
+    display: flex;
+    flex-direction: column;
+
+    .drugie__container {
+        width: 100%;
+        max-width: 1290px;
+        margin: 0 auto;
+
+        h3 {
+            font-family: Golos;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            text-align: left;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 550px) {
+            h3 {
+                font-family: Golos;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 48px;
+                text-align: left;
+
+            }
+        }
+
+        .card_capel {
+            padding: 0;
+            gap: 0;
+            margin: 0 auto;
+        }
+
+        .card_capel .text__container {
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+
+        .card_capel .btn__container {
+            padding: 0 15px 30px;
+        }
+
+        .card_capel .img .title {
+            width: 124px;
+        }
+
+
+    }
+
+    @media (max-width: 370px) {
+        .drugie__container .card_capel .img .title {
+            width: 105px;
+        }
+    }
+}
